@@ -1,75 +1,90 @@
 <!DOCTYPE html>
 <html>
-    <center>
-    <head>
-        <link rel="stylesheet" href="index.css">
-        
-        <meta charset="UTF-8">
-        <meta name="description" content="This is my first website">
-        <title>About me</title>
-    </head>
-    </center>
-    <body style="background-color: seashell;">
-        <header>
-            <div class="topnav">
-                <a class="active" href="#home">Home</a>
-                <a href="#news">News</a>
-                <a href="#contact">Contact</a>
-                <a href="#about">About</a>
-            </div>
-            
-                
-                
-            
-        </header>
-        <h1 style="color: purple; font-size: xx-large;"><b><i><strong>About me</strong></i></b></h1>
-        
-        <p><b><i>Hello all and welcome to my page!</i></b></p>
-        <br/>
-        <hr/>
-    
-        
-        <main>
-            <section>
-                
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<style>
+* {
+  box-sizing: border-box;
+}
+.menu {
+  float: left;
+  width: 20%;
+}
+.menuitem {
+  padding: 8px;
+  margin-top: 7px;
+  border-bottom: 1px solid #f1f1f1;
+}
+.main {
+  float: left;
+  width: 60%;
+  padding: 0 20px;
+  overflow: hidden;
+}
+.right {
+  background-color: lightblue;
+  float: left;
+  width: 20%;
+  padding: 10px 15px;
+  margin-top: 7px;
+}
 
-                <h2 style="font-size: x-large;"><strong>Name</strong></h2>
-                <p style="font-size: larger;"><b><strong>Geetanksha Gupta</strong></b></p>
+@media only screen and (max-width:800px) {
+  /* For tablets: */
+  .main {
+    width: 80%;
+    padding: 0;
+  }
+  .right {
+    width: 100%;
+  }
+}
+@media only screen and (max-width:500px) {
+  /* For mobile phones: */
+  .menu, .main, .right {
+    width: 100%;
+  }
+}
+</style>
+</head>
+<body style="font-family:Verdana;">
 
-                <!--<hr/> tag is used to give a horizontal line-->
-                <h3 style="font-size: medium;">Picture</h3>
-                <img width="300" height="300" src="profile pic.jpg" alt="My picture" ALIGN="left"/>
+<div style="background-color:#f1f1f1;padding:15px;">
+  <h1>About me</h1>
+  <h3>Hello all and welcome to my page!</h3>
+</div>
+
+<div style="overflow:auto">
+  <div class="menu">
+    <div class="menuitem">About me</div>
+    <div class="menuitem">Hobbies</div>
+    <div class="menuitem">Ambitions</div>
+    <div class="menuitem">Extra comments</div>
+  </div>
+
+  <div class="main">
+    <h2>About me</h2>
+    <p>Hello! I am Geetanksha Gupta, pursuing M.Sc PhD dual degree program in Energy Science and Engineering from IIT Bombay. Currently doing a summer course on Web development organised by Web and Coding Club (WnCC), IIT Bombay.</p>
+    <img src="profile pic.jpg" style="width:100%">
+  </div>
+
+  <div class="right">
+    <h2>Hobbies</h2>
+      <ul>
+          <li>Playing Guitar</li>
+          <li>Volunteering</li>
+          <li>Travelling</li>
+          <li>Cooking</li>
+      </ul>
+    <h2>Ambitions</h2>
+      <p> To grow and learn new skills with time. </p>
+    <h2>Extra comments</h2>
+    <a href="https://thestoryoftelling.com/10-rules-for-writing-about-me-page/" target="_blank"><h6>How to write a 'About me' page.</h6></a>
+  </div>
+</div>
 
 
-                <h4><big>Hobbies</big></h4>
-                
-                
-                    <div>
-                        <ul>
-                            <li>Playing Guitar</li>
-                            <li>Volunteering</li>
-                            <li>Travelling</li>
-                            <li>Cooking</li>
+<div style="background-color:#f1f1f1;text-align:center;padding:10px;margin-top:7px;font-size:12px;"> This is a brief introduction of myself and yeah looking forward for more progress in Web development. It is fun.</div>
 
-                        </ul>  
-                    </div>
-                
-                <h5><big>Ambitions</big></h5>
-                <p>To grow and learn new skills with time. </p>
-            </section>
-
-        
-        </main>
-        <footer>
-            <h6><big>Extra comments</big></h6>
-        
-            <a href="https://thestoryoftelling.com/10-rules-for-writing-about-me-page/" target="_blank"><h6>How to write a 'About me' page.</h6></a>
-
-        
-        </footer>
-        
-          
-    </body>
-   
-
+</body>
 </html>
