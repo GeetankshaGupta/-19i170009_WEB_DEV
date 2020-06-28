@@ -28,7 +28,26 @@
   padding: 10px 15px;
   margin-top: 7px;
 }
+.vertical-menu {
+  width: 200px; /* Set a width if you like */
+}
 
+.vertical-menu a {
+  background-color: #eee; /* Grey background color */
+  color: black; /* Black text color */
+  display: block; /* Make the links appear below each other */
+  padding: 12px; /* Add some padding */
+  text-decoration: none; /* Remove underline from links */
+}
+
+.vertical-menu a:hover {
+  background-color: #ccc; /* Dark grey background on mouse-over */
+}
+
+.vertical-menu a.active {
+  background-color: #4CAF50; /* Add a green color to the "active/current" link */
+  color: white;
+}
 @media only screen and (max-width:800px) {
   /* For tablets: */
   .main {
@@ -54,18 +73,16 @@
   <h3>Hello all and welcome to my page!</h3>
 </div>
 
-<div style="overflow:auto">
-  <div class="menu">
-    <div class="menuitem">About me</div>
-    <div class="menuitem">Hobbies</div>
-    <div class="menuitem">Ambitions</div>
-    <div class="menuitem">Extra comments</div>
-  </div>
+<div class="vertical-menu">
+  <a href="https://www.ese.iitb.ac.in/">DESE</a>
+  <a href="https://gymkhana.iitb.ac.in/~ugacademics/learnerspace_2020/index.php">Learners' Space</a>
+  <a href="https://www.wncc-iitb.org/">WnCC</a>
+</div>
 
   <div class="main">
     <h2>About me</h2>
     <p>Hello! I am Geetanksha Gupta, pursuing M.Sc PhD dual degree program in Energy Science and Engineering from IIT Bombay. Currently doing a summer course on Web development organised by Web and Coding Club (WnCC), IIT Bombay.</p>
-    <img src="profile pic.jpg" style="width:100%">
+    <img width="300" height="300" src="profile pic.jpg">
   </div>
 
   <div class="right">
