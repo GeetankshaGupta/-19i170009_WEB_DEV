@@ -28,24 +28,27 @@
   padding: 10px 15px;
   margin-top: 7px;
 }
-.vertical-menu {
-  width: 200px; /* Set a width if you like */
+.topnav {
+  overflow: hidden;
+  background-color: #333;
 }
 
-.vertical-menu a {
-  background-color: #eee; /* Grey background color */
-  color: black; /* Black text color */
-  display: block; /* Make the links appear below each other */
-  padding: 12px; /* Add some padding */
-  text-decoration: none; /* Remove underline from links */
+.topnav a {
+  float: left;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
 }
 
-.vertical-menu a:hover {
-  background-color: #ccc; /* Dark grey background on mouse-over */
+.topnav a:hover {
+  background-color: #ddd;
+  color: black;
 }
 
-.vertical-menu a.active {
-  background-color: #4CAF50; /* Add a green color to the "active/current" link */
+.topnav a.active {
+  background-color: #4CAF50;
   color: white;
 }
 @media only screen and (max-width:800px) {
@@ -72,9 +75,8 @@
   <h1>About me</h1>
   <h3>Hello all and welcome to my page!</h3>
 </div>
-
 <div style="overflow:auto">
-  <div class="vertical-menu">
+  <div class="topnav">
     <a href="https://www.ese.iitb.ac.in/">DESE</a>
     <a href="https://gymkhana.iitb.ac.in/~ugacademics/learnerspace_2020/index.php">Learners' Space</a>
     <a href="https://www.wncc-iitb.org/">WnCC</a>
