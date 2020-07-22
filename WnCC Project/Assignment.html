@@ -40,13 +40,13 @@ input[type=submit]:hover {
 
 .col-25 {
   float: left;
-  width: 25%;
+  width: 30%;
   margin-top: 6px;
 }
 
 .col-75 {
   float: left;
-  width: 75%;
+  width: 70%;
   margin-top: 6px;
 }
 
@@ -199,16 +199,6 @@ body {
   <p>Hello and welcome to my page!</p>
 </div>
 
-
-<div class="topnav" id="myTopnav">
-    <a href="#home" class="active">Home</a>
-    <a href="#hobbies">Hobbies</a>
-    <a href="#camerawork">Camerawork</a>
-    <a href="#contact">Contact</a>
-    <a href="javascript:void(0);" class="icon" onclick="myFunction()">
-      <i class="fa fa-bars"></i>
-    </a>
-</div>
 <script>
     function myFunction() {
       var x = document.getElementById("myTopnav");
@@ -219,12 +209,17 @@ body {
       }
     }
 </script>
-<div id="navDemo" class="w3-bar-block w3-black w3-hide w3-hide-large w3-hide-medium w3-top" style="margin-top:46px">
-    <a href="#home" class="w3-bar-item w3-button w3-padding-large" onclick="myFunction()">Home</a>
-    <a href="#hobbies" class="w3-bar-item w3-button w3-padding-large" onclick="myFunction()">Hobbies</a>
-    <a href="#camerawork" class="w3-bar-item w3-button w3-padding-large" onclick="myFunction()">Camerawork</a>
-    <a href="#contact" class="w3-bar-item w3-button w3-padding-large" onclick="myFunction()">Contact</a>
-  </div>
+<div class="topnav" id="myTopnav">
+    <a href="#home" class="active">Home</a>
+    <a href="#hobbies">Hobbies</a>
+    <a href="#camerawork">Camerawork</a>
+    <a href="#contact">Contact</a>
+    <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+      <i class="fa fa-bars"></i>
+    </a>
+</div>
+
+
 <!-- <div class="topnav">
     <span onclick="this.parentElement.style.display='none'"
     <div class="w3-bar w3-black">X</span>
@@ -253,9 +248,11 @@ body {
     <div class="card">
         <h2>Camerawork</h2>
         <h5>The Earth has music for those who listen.</h5>
-        <div class="fakeimg" style="height:200px;">Image</div>
-        <p>Some text..</p>
-        <p>Sunt in culpa qui officia deserunt mollit anim id est laborum consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco.</p>
+        <div class="fakeimg" style="height:200px;"><img src="Rainbow.jpg" ></div>
+        <p>Try to be a rainbow in someone’s cloud.</p>
+        <div class="fakeimg" style="height:200px;"><img src="Sunset.jpg" ></div>
+        <p>Peace is seeing the sunrise or a sunset and knowing who to thank.</p>
+        <!-- <p>Sunt in culpa qui officia deserunt mollit anim id est laborum consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco.</p> -->
       </div>
   </div>
   <div class="rightcolumn">
@@ -269,18 +266,18 @@ body {
       
       <h2> My Playlist</h2>
       <ul>
-        <li> <p>Coke Studio: Afreen Afreen</p>
+        <li> <p> <h5>Coke Studio: Afreen Afreen</h5></p>
          <p>(Rahat Fateh Ali Khan, Momima Mustehasan)</p></li>
-        <li><p>Memories</p>
+        <li><p><h5>Memories</h5></p>
         <p>(Maroon 5)</p></li>
-        <li><p>Lily</p>
+        <li><p><h5>Lily</h5></p>
         <p>(Alan Walker, Emelie Hollow, K-391)</p></li><!-- and forcing other to travel too even if they don't want-->
-        <li><p>Coke Studio: Laadki</p>
+        <li><p><h5>Coke Studio: Laadki</h5></p>
         <p>(Rekha Bhardwaj, Kritidan Gadhvi, Tanishka Sanghvi)</p> </li>
       </ul>
       
     <div class="card">
-      <h3>Contact Form</h3>
+      <h2>Contact Form</h2>
       <div class="container">
         <form action="/action_page.php">
           <div class="row">
