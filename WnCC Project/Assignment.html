@@ -63,7 +63,9 @@ body {
 .header {
   padding: 30px;
   text-align: center;
-  background: turquoise
+  background: rgb(205, 221, 160);
+  font-style: oblique;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 
 .header h1 {
@@ -195,9 +197,9 @@ body {
 <body>
 
 <div class="header">
-
   <h1>About Me</h1>
-  <h3>Hello and welcome to my page!</h3>
+  
+  <h2>Hello and welcome to my page!</h2>
 </div>
 
 <script>
@@ -210,15 +212,31 @@ body {
       }
     }
 </script>
-<div class="topnav" id="myTopnav">
-    <a href="#home" class="active">Home</a>
-    <a href="#hobbies">Introduction</a>
-    <a href="#camerawork">Camerawork</a>
-    <a href="#contact">Contact</a>
+<div id="navbar">
+<div id="holder">
+  <div class="topnav" id="myTopnav" id="opening">
+  <a href="#opening">Home</a>
+  
+  <a href="#opening">Introduction</a>
+  
+  <a href="#opening">Camerawork</a>
+  
+  <a href="#opening">Contact Form</a>
+  <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+    <i class="fa fa-bars"></i>
+  </a>
+  </div>
+</div>
+</div>
+<!-- <div class="topnav" id="myTopnav" id="opening">
+    <a href="#opening" class="active">Home</a>
+    <a href="#opening">Introduction</a>
+    <a href="#opening">Camerawork</a>
+    <a href="#opening">Contact Form</a>
     <a href="javascript:void(0);" class="icon" onclick="myFunction()">
       <i class="fa fa-bars"></i>
     </a>
-</div>
+</div> -->
 
 <div class="row">
   <div class="leftcolumn">
@@ -269,13 +287,15 @@ body {
     <div class="card">
       <h2>Contact Form</h2>
       <div class="container">
-        <form action="/action_page.php">
+        
+        <form action="https://formspree.io/xaypaevp"
+          method="POST">
           <div class="row">
             <div class="col-25">
               <label for="fname">First Name</label>
             </div>
             <div class="col-75">
-              <input type="text" id="fname" name="firstname" placeholder="Your name..">
+              <input type="text" id="fname" name="firstname" placeholder="Your name.." required>
             </div>
           </div>
           <div class="row">
@@ -283,7 +303,15 @@ body {
               <label for="lname">Last Name</label>
             </div>
             <div class="col-75">
-              <input type="text" id="lname" name="lastname" placeholder="Your last name..">
+              <input type="text" id="lname" name="lastname" placeholder="Your last name.." required>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-25">
+              <label for="email">Your email</label>
+            </div>
+            <div class="col-75">
+              <input type="text" id="email" name="email" placeholder="Enter valid email" required>
             </div>
           </div>
         
@@ -306,7 +334,7 @@ body {
 
 <div class="footer">
   <h2>Footer</h2>
-  <p>Created by Geetanksha Gupta</p>
+  <h4>Created by Geetanksha Gupta</h4>
 </div>
 
 </body>
