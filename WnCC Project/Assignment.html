@@ -5,6 +5,54 @@
 * {
   box-sizing: border-box;
 }
+input[type=text], select, textarea {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  resize: vertical;
+}
+
+label {
+  padding: 12px 12px 12px 0;
+  display: inline-block;
+}
+
+input[type=submit] {
+  background-color: #4CAF50;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  float: right;
+}
+
+input[type=submit]:hover {
+  background-color: #45a049;
+}
+
+.container {
+  border-radius: 5px;
+  background-color: #f2f2f2;
+  padding: 20px;
+}
+
+.col-25 {
+  float: left;
+  width: 25%;
+  margin-top: 6px;
+}
+
+.col-75 {
+  float: left;
+  width: 75%;
+  margin-top: 6px;
+}
+
+/* Clear floats after the columns */
+
+
 body {
   font-family: Arial;
   padding: 10px;
@@ -67,9 +115,10 @@ body {
 /* Right column */
 .rightcolumn {
   float: left;
-  width: 25%;
-  background-color: #f1f1f1;
+  width: 30%;
+  background-color: lightblue;
   padding-left: 20px;
+  margin-top: 20px;
 }
 
 /* Fake image */
@@ -103,7 +152,8 @@ body {
 
 /* Responsive layout - when the screen is less than 800px wide, make the two columns stack on top of each other instead of next to each other */
 @media screen and (max-width: 800px) {
-  .leftcolumn, .rightcolumn {   
+  .leftcolumn, .rightcolumn, .col-25, .col-75, input[type=submit]   { 
+  
     width: 100%;
     padding: 0;
   }
@@ -199,41 +249,70 @@ body {
     <p> “Music is the literature of the heart; it commences where speech ends.” ― Alphonse de Lamartine. Music is the best healing therapy for me as well.</p>
  
     <p> The only real stumbling block is fear of failure. In cooking you’ve got to have a what-the-hell attitude. — Julia Child. Now, cooking is the new emerging passion of mine.</p>
-      
-      <div class="fakeimg" style="height:200px;">Image</div>
-      <p>Some text..</p>
-      <p>Sunt in culpa qui officia deserunt mollit anim id est laborum consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco.</p>
-    </div>
-    <div class="card">
-      <h2>Hobbies</h2>
-      <h5>Title description, Sep 2, 2017</h5>
-      <div class="fakeimg" style="height:200px;">Image</div>
-      <p>Some text..</p>
-      <p>Sunt in culpa qui officia deserunt mollit anim id est laborum consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco.</p>
     </div>
     <div class="card">
         <h2>Camerawork</h2>
-        <h5>Title description, Sep 2, 2017</h5>
+        <h5>The Earth has music for those who listen.</h5>
         <div class="fakeimg" style="height:200px;">Image</div>
         <p>Some text..</p>
         <p>Sunt in culpa qui officia deserunt mollit anim id est laborum consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco.</p>
       </div>
   </div>
   <div class="rightcolumn">
-    <div class="card">
-      <h2>Academics</h2>
-      <div class="fakeimg" style="height:100px;">Image</div>
-      <p>Some text about me in culpa qui officia deserunt mollit anim..</p>
-    </div>
-    <div class="card">
-      <h3>Playlist</h3>
-      <div class="fakeimg"><p>Image</p></div>
-      <div class="fakeimg"><p>Image</p></div>
-      <div class="fakeimg"><p>Image</p></div>
-    </div>
+      <h2>Ongoing Skills</h2>
+      <ul>
+        <li>Web Development</li>
+        <li>Python</li>
+        <li>LaTeX</li><!-- and forcing other to travel too even if they don't want-->
+        <li>Scientific Computing</li>
+      </ul>
+      
+      <h2> My Playlist</h2>
+      <ul>
+        <li> <p>Coke Studio: Afreen Afreen</p>
+         <p>(Rahat Fateh Ali Khan, Momima Mustehasan)</p></li>
+        <li><p>Memories</p>
+        <p>(Maroon 5)</p></li>
+        <li><p>Lily</p>
+        <p>(Alan Walker, Emelie Hollow, K-391)</p></li><!-- and forcing other to travel too even if they don't want-->
+        <li><p>Coke Studio: Laadki</p>
+        <p>(Rekha Bhardwaj, Kritidan Gadhvi, Tanishka Sanghvi)</p> </li>
+      </ul>
+      
     <div class="card">
       <h3>Contact Form</h3>
-      <p>Some text..</p>
+      <div class="container">
+        <form action="/action_page.php">
+          <div class="row">
+            <div class="col-25">
+              <label for="fname">First Name</label>
+            </div>
+            <div class="col-75">
+              <input type="text" id="fname" name="firstname" placeholder="Your name..">
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-25">
+              <label for="lname">Last Name</label>
+            </div>
+            <div class="col-75">
+              <input type="text" id="lname" name="lastname" placeholder="Your last name..">
+            </div>
+          </div>
+        
+          <div class="row">
+            <div class="col-25">
+              <label for="feedback">Feedback</label>
+            </div>
+            <div class="col-75">
+              <textarea id="feedback" name="feedback" placeholder="Write something.." style="height:200px"></textarea>
+            </div>
+          </div>
+          <div class="row">
+            <input type="submit" value="Submit">
+          </div>
+        </form>
+      </div>
     </div>
   </div>
 </div>
