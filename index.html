@@ -67,7 +67,7 @@ body {
   background: lightcyan;
   font-style: oblique;
   font-family: Verdana, Geneva, Tahoma, sans-serif;
-  color:rgb(228, 92, 51);
+  color:gray;
   text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
 }
 
@@ -139,6 +139,11 @@ body {
   padding: 20px;
   margin-top: 20px;
 }
+.card1 {
+  background-color: white;
+  padding: 0px;
+  margin-top: 200px;
+}
 
 /* Clear floats after the columns */
 .row:after {
@@ -158,8 +163,8 @@ body {
 }
 
 /* Responsive layout - when the screen is less than 800px wide, make the two columns stack on top of each other instead of next to each other */
-@media screen and (max-width: 600px) {
-  .leftcolumn, .rightcolumn, .col-25, .col-75, input[type=submit]   { 
+@media screen and (max-width: 800px) {
+  .leftcolumn, .rightcolumn  { 
   
     width: 100%;
     padding: 0;
@@ -170,7 +175,7 @@ body {
 @media screen and (max-width: 400px) {
   .topnav a {
     float: none;
-    width: 70%;
+    width: 100%;
   }
 }
 /* When the screen is less than 600 pixels wide, hide all links, except for the first one ("Home"). Show the link that contains should open and close the topnav (.icon) */
@@ -196,7 +201,6 @@ body {
     text-align: left;
   }
 }
-
 </style>
 </head>
 <body>
@@ -294,7 +298,9 @@ body {
       }
       }
 </script>     
-    <div class="card">
+    <div class="card1">
+
+      
       <article id="contactform">
       <h2>Contact Form</h2>
       <div class="container">
@@ -317,6 +323,7 @@ body {
               <input type="text" id="lname" name="lastname" placeholder="Your last name.." required>
             </div>
           </div>
+          <script src="all-letter.js"> </script>
           <div class="row">
             <div class="col-25">
               <label for="email">Your email</label>
@@ -340,7 +347,7 @@ body {
           </div>
         </form>
       </div>
-      <script src="all-letter.js"> </script>
+     
     </div>
   </div>
 </div>
