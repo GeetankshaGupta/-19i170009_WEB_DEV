@@ -14,7 +14,7 @@ input[type=text], select, textarea {
 }
 
 label {
-  /* padding: 12px 12px 12px 0; */
+  padding: 12px 12px 12px 0; 
   display: inline-block;
 }
 
@@ -36,7 +36,7 @@ input[type=submit]:hover {
   border-radius: 0px;
   background-color: #f2f2f2;
   padding: 0px;
-  margin-top: 50px;
+  margin-top: 20px;
 }
 
 .col-25 {
@@ -64,7 +64,7 @@ body {
 .header {
   padding: 30px;
   text-align: center;
-  background: rgb(205, 221, 160);
+  background: lightcyan;
   font-style: oblique;
   font-family: Verdana, Geneva, Tahoma, sans-serif;
   color:rgb(228, 92, 51);
@@ -158,7 +158,7 @@ body {
 }
 
 /* Responsive layout - when the screen is less than 800px wide, make the two columns stack on top of each other instead of next to each other */
-@media screen and (max-width: 800px) {
+@media screen and (max-width: 600px) {
   .leftcolumn, .rightcolumn, .col-25, .col-75, input[type=submit]   { 
   
     width: 100%;
@@ -219,14 +219,12 @@ body {
 </script>
   <div class="topnav" id="myTopnav">
     <nav>
-      <ul>
-        <li><a href="#home">Home</a></li>
-        <li><a href="#introduction">Introduction</a></li>
-        <li> <a href="#camerawork">Camerawork</a></li>
-        <li><a href="#contactform">Contact Form</a></li>
-        <li><a href="javascript:void(0);" class="icon" onclick="myFunction()">
-          <i class="fa fa-bars"></i></li>
-      </ul>
+        <a href="#home">Home</a>
+        <a href="#introduction">Introduction</a>
+        <a href="#camerawork">Camerawork</a>
+        <a href="#contactform">Contact Form</a>
+        <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+          <i class="fa fa-bars"></i>
     </nav>
   </a>
   </div>
@@ -280,7 +278,22 @@ body {
         <li><p><h5>Coke Studio: Laadki</h5></p>
         <p>(Rekha Bhardwaj, Kritidan Gadhvi, Tanishka Sanghvi)</p> </li>
       </ul>
-      
+<script>
+      function allLetter(inputtxt)
+      { 
+      var letters = /^[A-Za-z]+$/;
+      if(inputtxt.value.match(letters))
+      {
+      alert('Your name have accepted : you can try another');
+      return true;
+      }
+      else
+      {
+      alert('Please input alphabet characters only');
+      return false;
+      }
+      }
+</script>     
     <div class="card">
       <article id="contactform">
       <h2>Contact Form</h2>
@@ -327,12 +340,13 @@ body {
           </div>
         </form>
       </div>
+      <script src="all-letter.js"> </script>
     </div>
   </div>
 </div>
 
+
 <div class="footer">
-  <h2>Footer</h2>
   <h4>Created by Geetanksha Gupta</h4>
 </div>
 
